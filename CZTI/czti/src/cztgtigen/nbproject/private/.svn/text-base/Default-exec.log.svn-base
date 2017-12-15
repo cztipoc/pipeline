@@ -1,0 +1,166 @@
+called: icpc
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	icpc
+	-c
+	-Wall
+	cztgtigen.cpp
+	-o
+	cztgtigen.o
+	-I../include
+	-I../../include
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-libgcc-file-name
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-search-dirs
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	--version
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	-v
+
+called: icpc
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	icpc
+	-c
+	-Wall
+	lbt.cpp
+	-o
+	lbt.o
+	-I../include
+	-I../../include
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-libgcc-file-name
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-search-dirs
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	--version
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	-v
+
+called: icpc
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	icpc
+	-o
+	cztgtigen
+	main.cpp
+	cztgtigen.o
+	lbt.o
+	-I../include
+	-I../../include
+	-L../../lib
+	-lpil
+	../lib/libcommon.a
+	-lcfitsio
+	-lm
+	-lglog
+	-lpthread
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-libgcc-file-name
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-search-dirs
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	--version
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	-v
+
+called: g++
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	g++
+	--print-search-dirs
+
+called: ld
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ld
+	/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crt1.o
+	/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crti.o
+	/usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtbegin.o
+	--eh-frame-hdr
+	-dynamic-linker
+	/lib64/ld-linux-x86-64.so.2
+	-o
+	cztgtigen
+	/tmp/icpclo2Pjk.o
+	cztgtigen.o
+	lbt.o
+	-L../../lib
+	-lpil
+	../lib/libcommon.a
+	-lcfitsio
+	-L/usr
+	-limf
+	-lm
+	-lglog
+	-lpthread
+	-L/opt/intel/cce/10.1.021/lib
+	-L/usr/lib/gcc/x86_64-redhat-linux/4.4.6/
+	-Bstatic
+	-limf
+	-lsvml
+	-Bdynamic
+	-lm
+	-Bstatic
+	-lipgo
+	-Bdynamic
+	-lstdc++
+	-Bstatic
+	-lirc
+	-Bdynamic
+	-lgcc_s
+	-lgcc
+	-Bstatic
+	-lirc
+	-Bdynamic
+	-lc
+	-lgcc_s
+	-lgcc
+	-Bstatic
+	-lirc_s
+	-Bdynamic
+	-ldl
+	-lc
+	/usr/lib/gcc/x86_64-redhat-linux/4.4.6/crtend.o
+	/usr/lib/gcc/x86_64-redhat-linux/4.4.6/../../../../lib64/crtn.o
+
+called: ar
+	/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen
+	ar
+	cr
+	../lib/libcztgtigen.a
+	cztgtigen.o
+	lbt.o
+

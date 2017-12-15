@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/Mvector.h</itemPath>
+      <itemPath>../../src/common/caldbHandler.h</itemPath>
+      <itemPath>../../src/common/coordinateTransformation.h</itemPath>
+      <itemPath>../../src/cztgaas/cztgaas_v2.h</itemPath>
+      <itemPath>../../src/common/cztstring.h</itemPath>
+      <itemPath>../../src/common/errorHandler.h</itemPath>
+      <itemPath>../../src/common/level1handler.h</itemPath>
+      <itemPath>../../src/common/level2validation.h</itemPath>
+      <itemPath>../../src/common/mkfRegeneration.h</itemPath>
+      <itemPath>../../src/common/utils.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/Mvector.cpp</itemPath>
+      <itemPath>../../src/common/caldbHandler.cpp</itemPath>
+      <itemPath>../../src/common/coordinateTrasformation.cpp</itemPath>
+      <itemPath>../../src/cztgaas/cztgaas_v2.cpp</itemPath>
+      <itemPath>../../src/common/cztstring.cpp</itemPath>
+      <itemPath>../../src/common/errorHandler.cpp</itemPath>
+      <itemPath>../../src/common/level1handler.cpp</itemPath>
+      <itemPath>../../src/common/level2validation.cpp</itemPath>
+      <itemPath>../../src/cztgaas/main.cpp</itemPath>
+      <itemPath>../../src/common/mkfRegeneration.cpp</itemPath>
+      <itemPath>../../src/common/utils.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../src/cztgaas</Elem>
+    <Elem>../../include</Elem>
+    <Elem>../../src/common</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../include</pElem>
+            <pElem>../../src/cztgaas</pElem>
+            <pElem>../../src/common</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>../../bin/cztgaas</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../lib/libcfitsio.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libglog.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libpil.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-DNDEBUG</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="../../src/common/Mvector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTrasformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../../src/common/Mvector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTrasformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

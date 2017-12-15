@@ -1,0 +1,35 @@
+cc=gcc -c
+ccc=g++ -DNDEBUG
+<<<<<<< .mine
+INCLUDE=-I. -I../common/ -I../../include/ -I/usr/include/mysql $(INCLUDE1)
+LIB=-L ../../lib/ -lpil -lcfitsio -lglog -ljpeg
+=======
+INCLUDE=-I. -I../common/ -I../../include/ -I /usr/include/mysql $(INCLUDE1)
+LIB=-L ../../lib/ -lpil -lcfitsio -lglog -ljpeg    -L/usr/lib64/mysql -lmysqlclient -lz -lcrypt -lnsl -lm -lssl -lcrypto 
+>>>>>>> .r1157
+CP=cp
+
+OBJECTS=$(SOURCES:.cpp=.o)  $(SOURCES2:.c=.o)
+CDIR=../common
+BINDIR=../../bin
+
+all       	: $(EXE)
+		$(CP) $(EXE) $(BINDIR)
+		$(RM) $(EXE)
+		$(RM) *.o $(CDIR)/*.o
+
+$(EXE) 		: $(OBJECTS)
+		$(ccc) $(OBJECTS) $(INCLUDE) $(LIB)  -o  $(EXE)
+		#$(CP) $(EXE) $(BINDIR)
+
+.cpp.o		: 
+		$(ccc) -w -c $< -o $@ $(INCLUDE)
+
+.c.o		: 
+		$(cc) $< -o $@ $(INCLUDE)
+
+
+clean:
+	$(RM) $(EXE)
+	$(RM) *.o $(CDIR)/*.o
+

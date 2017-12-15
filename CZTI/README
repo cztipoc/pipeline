@@ -1,0 +1,51 @@
+Pre-Requisites
+	OS: Red Hat Enterprise Linux Server release 6.1 (Santiago)
+	Compiler: gcc (GCC) 4.4.5 20110214 (Red Hat 4.4.5-6)
+Directory Structure
+
+
+
+
+
+1.Run the command 'csh' to change the shell to cshell  
+
+2.Untar the package.
+	tar -xvzf as1.tgz
+	This will create a directory named "as1"
+ 
+2.Create a directory for logfiles at any location.Let this be named as 'log'
+  Use the command 
+	mkdir log	
+	cd log
+  Run the command 'pwd'. This will give the absolute path for log directory. Note it down.	
+
+3.Set following environment variables in ~/.cshrc file
+
+	AS1 : Absolute path of as1 folder
+	PFILES : Absolute path of paramfiles folder
+	PATH : Absolute path of bin directory where all executables are placed 
+	GLOG_log_dir : Absolute path of the directory where all logfiles need to be generated
+	LD_LIBRARY_PATH : Path to shared libraries 
+
+Add following lines to ~/.cshrc file
+	setenv AS1 <path to as1 directory>
+	setenv PFILES $AS1/uvit/paramfiles
+	setenv PATH $AS1/uvit/bin:$PATH
+	setenv GLOG_log_dir <path to log directory>
+	
+setenv LD_LIBRARY_PATH $AS1/uvit/lib
+	xhost +
+	limit stacksize unlimited
+	limit coredumpsize unlimited
+4. tar file creation time must be less than the system time.
+
+5. Run the following commands
+	source ~/.cshrc
+	cd $AS1
+	./InstallLibs
+		$AS1 folder must contain include/, lib/, share/ and bin/ directories
+	cd uvit
+	make
+	source ~/.cshrc
+6. Now you can use the uvit software modules
+	

@@ -1,0 +1,200 @@
+#!/bin/bash
+#Shrikant Chaudhari 21 Oct 2016
+#this script execute for the orbitwise Science file and aux files to correct header and check intergrity of level1 sciecne data 
+#This is wrapper for cztmergeaux and cztmergescience
+if [ $1 ]; then		 
+	orbits_path=$1
+else
+	echo "Error: orbit path not provided"
+	exit -1
+fi
+
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: correcting aux file header....."
+#merging tct files
+nfiles=$(find $orbits_path/aux/ -name *.tct |wc -l)
+files=$(find $orbits_path/aux/ -name *.tct|sort)
+single_file=$(find $orbits_path/aux/ -name *.tct |head -1)
+outfile1=$orbits_path/aux/$(basename $single_file)
+temp_outfile1=$(dirname $outfile1)"/temp_aux_tct"
+
+#creating input txt file for cztmergeaux_V2.cpp
+>cztmergeaux_V2_input.txt
+echo $nfiles>>cztmergeaux_V2_input.txt
+echo $temp_outfile1>>cztmergeaux_V2_input.txt
+echo "y">>cztmergeaux_V2_input.txt
+echo $files>>cztmergeaux_V2_input.txt
+cztmergeaux<cztmergeaux_V2_input.txt
+mv $temp_outfile1 $outfile1
+
+#merging lbt files
+nfiles=$(find $orbits_path/aux/aux2 -name *.lbt |wc -l)
+files=$(find $orbits_path/aux/aux2 -name *.lbt|sort)
+single_file=$(find $orbits_path/aux/aux2 -name *.lbt |head -1)
+outfile2=$orbits_path/aux/aux2/$(basename $single_file)
+temp_outfile2=$(dirname $outfile2)"/temp_aux2_lbt"
+#creating input txt file for cztmergeaux_V2.cpp
+>cztmergeaux_V2_input.txt
+echo $nfiles>>cztmergeaux_V2_input.txt
+echo $temp_outfile2>>cztmergeaux_V2_input.txt
+echo "y">>cztmergeaux_V2_input.txt
+echo $files>>cztmergeaux_V2_input.txt
+cztmergeaux<cztmergeaux_V2_input.txt
+mv $temp_outfile2 $outfile2
+
+
+#merging aux1 orb files
+nfiles=$(find $orbits_path/aux/aux1 -name *.orb |wc -l)
+files=$(find $orbits_path/aux/aux1 -name *.orb|sort)
+single_file=$(find $orbits_path/aux/aux1 -name *.orb |head -1)
+outfile3=$orbits_path/aux/aux1/$(basename $single_file)
+temp=$orbits_path/aux/aux1/"temp_orb1"
+>cztmergeaux_V2_input.txt
+echo $nfiles>>cztmergeaux_V2_input.txt
+echo $temp>>cztmergeaux_V2_input.txt
+echo "y">>cztmergeaux_V2_input.txt
+echo $files>>cztmergeaux_V2_input.txt
+cztmergeaux<cztmergeaux_V2_input.txt
+mv $temp $outfile3
+
+#temp_outfile3=$(dirname $outfile3)"/temp_aux1_orb"
+#>cztorbcorrect_input.txt
+#echo $outfile3>>cztorbcorrect_input.txt
+#echo $temp_outfile3>>cztorbcorrect_input.txt
+#cztorbcorrect<cztorbcorrect_input.txt
+#mv $temp_outfile3 $outfile3
+
+#merging aux3 orb files
+nfiles=$(find $orbits_path/aux/aux3 -name *.orb |wc -l)
+files=$(find $orbits_path/aux/aux3 -name *.orb|sort)
+single_file=$(find $orbits_path/aux/aux3 -name *.orb |head -1)
+outfile4=$orbits_path/aux/aux3/$(basename $single_file)
+temp=$orbits_path/aux/aux3/"temp_orb3"
+
+>cztmergeaux_V2_input.txt
+echo $nfiles>>cztmergeaux_V2_input.txt
+echo $temp>>cztmergeaux_V2_input.txt
+echo "y">>cztmergeaux_V2_input.txt
+echo $files>>cztmergeaux_V2_input.txt
+cztmergeaux<cztmergeaux_V2_input.txt
+mv $temp $outfile4
+
+#merging interpolating att files
+nfiles=$(find $orbits_path/aux/aux1 -name *.att |wc -l)
+files=$(find $orbits_path/aux/aux1 -name *.att|sort)
+single_file=$(find $orbits_path/aux/aux1 -name *.att |head -1)
+outfile5=$orbits_path/aux/aux1/$(basename $single_file)
+temp=$orbits_path/aux/aux1/"temp_att"
+>cztmergeaux_V2_input.txt
+echo $nfiles>>cztmergeaux_V2_input.txt
+echo $temp>>cztmergeaux_V2_input.txt
+echo "y">>cztmergeaux_V2_input.txt
+echo $files>>cztmergeaux_V2_input.txt
+cztmergeaux<cztmergeaux_V2_input.txt
+mv $temp $outfile5
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: aux files corrected........."
+rm cztmergeaux_V2_input.txt
+
+################# cztmergescience processing ################
+#processing modeM0
+mode='modeM0'
+no_fits_files=$(find -L $orbits_path/ -name *M0*.fits |wc -l)
+if [ $no_fits_files -eq 0 ];then
+	echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: There is no modeM0 files"
+
+fi
+
+if [ $no_fits_files -gt 0 ];then
+fits_files=$(find -L $orbits_path -name *M0*.fits)
+merged_tct=$outfile1
+mcap_mkf_path=$(find -L $orbits_path -name *.xml|head -1)
+declare -a myarr  # declare an array
+myarr=($(find -L $orbits_path -name *M0*.fits|sort))
+output_base=`basename ${myarr[0]}`
+temp_output_file=$orbits_path/modeM0/temp_modeM0.fits
+output_file=$orbits_path/modeM0/$output_base
+>cztmergescience_input.txt
+echo $mode>>cztmergescience_input.txt
+echo $no_fits_files>>cztmergescience_input.txt
+for ((i=0;i<$no_fits_files;i++));
+do
+	echo ${myarr[i]}>>cztmergescience_input.txt
+done
+echo $merged_tct>>cztmergescience_input.txt
+echo $mcap_mkf_path>>cztmergescience_input.txt
+echo $temp_output_file>>cztmergescience_input.txt
+echo "y">>cztmergescience_input.txt
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: Running cztmergescience on modeM0...."
+cztmergescience<cztmergescience_input.txt 
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: modeM0 cztmergescience processing Completed.........."
+mv $temp_output_file $output_file
+fi
+
+#processing modeSS
+mode='modeSS'
+no_fits_files=$(find -L $orbits_path/ -name *SS*.fits |wc -l)
+if [ $no_fits_files -eq 0 ];then
+	echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: There is no modeSS files"
+
+fi
+
+if [ $no_fits_files -gt 0 ];then
+fits_files=$(find -L $orbits_path -name *SS*.fits)
+merged_tct=$outfile1
+mcap_mkf_path=$(find -L $orbits_path -name *.xml|head -1)
+declare -a myarr  # declare an array
+myarr=($(find -L $orbits_path -name *SS*.fits|sort))
+output_base=`basename ${myarr[0]}`
+temp_output_file=$orbits_path/modeSS/temp_modeSS.fits
+output_file=$orbits_path/modeSS/$output_base
+>cztmergescience_input.txt
+echo $mode>>cztmergescience_input.txt
+echo $no_fits_files>>cztmergescience_input.txt
+for ((i=0;i<$no_fits_files;i++));
+do
+	echo ${myarr[i]}>>cztmergescience_input.txt
+done
+echo $merged_tct>>cztmergescience_input.txt
+echo $mcap_mkf_path>>cztmergescience_input.txt
+echo $temp_output_file>>cztmergescience_input.txt
+echo "y">>cztmergescience_input.txt
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: Running cztmergescience on modeSS...."
+cztmergescience<cztmergescience_input.txt 
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: modeSS cztmergescience processing Completed.........."
+mv $temp_output_file $output_file
+fi
+
+#processing modeM9
+mode='modeM9'
+no_fits_files=$(find -L $orbits_path/ -name *M9*.fits |wc -l)
+if [ $no_fits_files -eq 0 ];then
+	echo "There is no modeM9 files"
+
+fi
+
+if [ $no_fits_files -gt 0 ];then
+fits_files=$(find -L $orbits_path -name *M9*.fits)
+merged_tct=$outfile1
+mcap_mkf_path=$(find -L $orbits_path -name *.xml|head -1)
+declare -a myarr  # declare an array
+myarr=($(find -L $orbits_path -name *M9*.fits|sort))
+output_base=`basename ${myarr[0]}`
+temp_output_file=$orbits_path/modeM9/temp_modeM9.fits
+output_file=$orbits_path/modeM9/$output_base
+>cztmergescience_input.txt
+echo $mode>>cztmergescience_input.txt
+echo $no_fits_files>>cztmergescience_input.txt
+for ((i=0;i<$no_fits_files;i++));
+do
+	echo ${myarr[i]}>>cztmergescience_input.txt
+done
+echo $merged_tct>>cztmergescience_input.txt
+echo $mcap_mkf_path>>cztmergescience_input.txt
+echo $temp_output_file>>cztmergescience_input.txt
+echo "y">>cztmergescience_input.txt
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: Running cztmergescience on modeM9...."
+cztmergescience<cztmergescience_input.txt 
+echo "cztl1clean.sh: $USER $(date "+%Y-%m-%d %H:%M:%S"):: modeM9 cztmergescience processing Completed.........."
+mv $temp_output_file $output_file
+fi
+rm cztmergescience_input.txt
+

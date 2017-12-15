@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/ExpMap.h</itemPath>
+      <itemPath>../../src/common/Exposure.h</itemPath>
+      <itemPath>../../src/common/Fitting.h</itemPath>
+      <itemPath>../../src/common/Mvector.h</itemPath>
+      <itemPath>../../src/common/alglibinternal.h</itemPath>
+      <itemPath>../../src/common/alglibmisc.h</itemPath>
+      <itemPath>../../src/common/ap.h</itemPath>
+      <itemPath>../../src/common/badpixCALDB.h</itemPath>
+      <itemPath>../../src/common/caldbHandler.h</itemPath>
+      <itemPath>../../src/common/coordinateTransformation.h</itemPath>
+      <itemPath>../../src/cztbindatanew/cztbindatanew.h</itemPath>
+      <itemPath>../../src/cztdatasel/cztdatasel.h</itemPath>
+      <itemPath>../../src/cztdpigen/cztdpigen_v2.h</itemPath>
+      <itemPath>../../src/cztevtclean/cztevtclean.h</itemPath>
+      <itemPath>../../src/cztflagbadpix/cztflagbadpix.h</itemPath>
+      <itemPath>../../src/cztgaas/cztgaas_v2.h</itemPath>
+      <itemPath>../../src/cztmkfgen/cztmkfgen.h</itemPath>
+      <itemPath>../../src/cztpipeline/cztpipeline.h</itemPath>
+      <itemPath>../../src/common/cztstring.h</itemPath>
+      <itemPath>../../src/common/detectorGeometry.h</itemPath>
+      <itemPath>../../src/common/errorHandler.h</itemPath>
+      <itemPath>../../src/common/gtiHandler.h</itemPath>
+      <itemPath>../../src/common/jpeg_handling.h</itemPath>
+      <itemPath>../../src/common/l1evtdecode.h</itemPath>
+      <itemPath>../../src/common/level1handler.h</itemPath>
+      <itemPath>../../src/common/level2validation.h</itemPath>
+      <itemPath>../../src/common/linalg.h</itemPath>
+      <itemPath>../../src/common/maskGeometry.h</itemPath>
+      <itemPath>../../src/common/mkfRegeneration.h</itemPath>
+      <itemPath>../../src/common/stdafx.h</itemPath>
+      <itemPath>../../src/common/utils.h</itemPath>
+      <itemPath>../../src/common/validations.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/ExpMap.cpp</itemPath>
+      <itemPath>../../src/common/Exposure.cpp</itemPath>
+      <itemPath>../../src/common/Mvector.cpp</itemPath>
+      <itemPath>../../src/common/alglibinternal.cpp</itemPath>
+      <itemPath>../../src/common/alglibmisc.cpp</itemPath>
+      <itemPath>../../src/common/ap.cpp</itemPath>
+      <itemPath>../../src/common/badpixCALDB.cpp</itemPath>
+      <itemPath>../../src/common/caldbHandler.cpp</itemPath>
+      <itemPath>../../src/common/coordinateTrasformation.cpp</itemPath>
+      <itemPath>../../src/cztbindatanew/cztbindatanew.cpp</itemPath>
+      <itemPath>../../src/cztdatasel/cztdatasel.cpp</itemPath>
+      <itemPath>../../src/cztdpigen/cztdpigen_v2.cpp</itemPath>
+      <itemPath>../../src/cztevtclean/cztevtclean.cpp</itemPath>
+      <itemPath>../../src/cztfilterbadpix/cztfilterbadpix.cpp</itemPath>
+      <itemPath>../../src/cztflagbadpix/cztflagbadpix.cpp</itemPath>
+      <itemPath>../../src/cztgaas/cztgaas_v2.cpp</itemPath>
+      <itemPath>../../src/cztgtigen/cztgtigen.cpp</itemPath>
+      <itemPath>../../src/cztimage/cztimage.cpp</itemPath>
+      <itemPath>../../src/cztimage/cztimage.h</itemPath>
+      <itemPath>../../src/cztmkfgen/cztmkfgen.cpp</itemPath>
+      <itemPath>../../src/cztpha2energy/cztpha2energyv2.cpp</itemPath>
+      <itemPath>../../src/cztpipeline/cztpipeline.cpp</itemPath>
+      <itemPath>../../src/cztpsfshadowgen/cztpsfshadowgen.cpp</itemPath>
+      <itemPath>../../src/cztscience2event/cztscience2event.cpp</itemPath>
+      <itemPath>../../src/common/cztstring.cpp</itemPath>
+      <itemPath>../../src/common/detectorGeometry.cpp</itemPath>
+      <itemPath>../../src/common/errorHandler.cpp</itemPath>
+      <itemPath>../../src/common/gtiHandler.cpp</itemPath>
+      <itemPath>../../src/common/jpeg_handling.cpp</itemPath>
+      <itemPath>../../src/common/l1evtdecode.cpp</itemPath>
+      <itemPath>../../src/common/level1handler.cpp</itemPath>
+      <itemPath>../../src/common/level2validation.cpp</itemPath>
+      <itemPath>../../src/common/linalg.cpp</itemPath>
+      <itemPath>../../src/cztpipeline/main.cpp</itemPath>
+      <itemPath>../../src/common/maskGeometry.cpp</itemPath>
+      <itemPath>../../src/common/mkfRegeneration.cpp</itemPath>
+      <itemPath>../../src/common/utils.cpp</itemPath>
+      <itemPath>../../src/common/validations.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../src/common</Elem>
+    <Elem>../../src/cztdatasel</Elem>
+    <Elem>../../src/cztdpigen</Elem>
+    <Elem>../../src/cztevtclean</Elem>
+    <Elem>../../src/cztfilterbadpix</Elem>
+    <Elem>../../src/cztfindbadpix</Elem>
+    <Elem>../../src/cztfindsources</Elem>
+    <Elem>../../src/cztgaas</Elem>
+    <Elem>../../src/cztgtigen</Elem>
+    <Elem>../../src/cztimage</Elem>
+    <Elem>../../src/cztpha2energy</Elem>
+    <Elem>../../src/cztpipeline</Elem>
+    <Elem>../../src/cztscience2event</Elem>
+    <Elem>../../src/cztpsfshadowgen</Elem>
+    <Elem>../../src/cztbindatanew</Elem>
+    <Elem>../../src/cztflagbadpix</Elem>
+    <Elem>../../src/cztmkfgen</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../src/cztpipeline</pElem>
+            <pElem>../../src/common</pElem>
+            <pElem>../../include</pElem>
+            <pElem>../../src/cztdatasel</pElem>
+            <pElem>../../src/cztdpigen</pElem>
+            <pElem>../../src/cztevtclean</pElem>
+            <pElem>../../src/cztfilterbadpix</pElem>
+            <pElem>../../src/cztfindbadpix</pElem>
+            <pElem>../../src/cztgaas</pElem>
+            <pElem>../../src/cztgtigen</pElem>
+            <pElem>../../src/cztimage</pElem>
+            <pElem>../../src/cztpha2energy</pElem>
+            <pElem>../../src/cztpsfshadowgen</pElem>
+            <pElem>../../src/cztscience2event</pElem>
+            <pElem>../../src/cztbindatanew</pElem>
+            <pElem>../../src/cztflagbadpix</pElem>
+            <pElem>../../src/cztmkfgen</pElem>
+          </incDir>
+          <commandLine>-DNDEBUG</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>../../bin/cztpipeline</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../lib/libcfitsio.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libglog.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libjpeg.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libpil.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../src/common/ExpMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/ExpMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Exposure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Exposure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Fitting.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibinternal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/alglibinternal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibmisc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibmisc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/ap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/ap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTrasformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/detectorGeometry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/detectorGeometry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/gtiHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/gtiHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/jpeg_handling.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/jpeg_handling.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/l1evtdecode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/l1evtdecode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/linalg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/linalg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/maskGeometry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/maskGeometry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/validations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/validations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztbindatanew/cztbindatanew.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztbindatanew/cztbindatanew.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdatasel/cztdatasel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdatasel/cztdatasel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztdpigen/cztdpigen_v2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdpigen/cztdpigen_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztevtclean/cztevtclean.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztevtclean/cztevtclean.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztfilterbadpix/cztfilterbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgtigen/cztgtigen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztimage/cztimage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztimage/cztimage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztmkfgen/cztmkfgen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztmkfgen/cztmkfgen.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztpha2energy/cztpha2energyv2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/cztpipeline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/cztpipeline.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztpsfshadowgen/cztpsfshadowgen.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztscience2event/cztscience2event.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../../src/common/ExpMap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/ExpMap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Exposure.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Exposure.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Fitting.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/Mvector.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibinternal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/alglibinternal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibmisc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/alglibmisc.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/ap.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/ap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/caldbHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTransformation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/coordinateTrasformation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/detectorGeometry.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/detectorGeometry.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/errorHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/gtiHandler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/gtiHandler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/jpeg_handling.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/jpeg_handling.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/l1evtdecode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/l1evtdecode.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/level1handler.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/level2validation.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/linalg.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/linalg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/maskGeometry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/maskGeometry.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/common/mkfRegeneration.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/stdafx.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/validations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/validations.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztbindatanew/cztbindatanew.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztbindatanew/cztbindatanew.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdatasel/cztdatasel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdatasel/cztdatasel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztdpigen/cztdpigen_v2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztdpigen/cztdpigen_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztevtclean/cztevtclean.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztevtclean/cztevtclean.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztfilterbadpix/cztfilterbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztgaas/cztgaas_v2.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztgtigen/cztgtigen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztimage/cztimage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztimage/cztimage.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztmkfgen/cztmkfgen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztmkfgen/cztmkfgen.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztpha2energy/cztpha2energyv2.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/cztpipeline.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/cztpipeline.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztpipeline/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/cztpsfshadowgen/cztpsfshadowgen.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztscience2event/cztscience2event.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

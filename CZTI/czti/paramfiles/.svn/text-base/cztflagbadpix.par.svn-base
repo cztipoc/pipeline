@@ -1,0 +1,7 @@
+nbadpixFiles,i,ql,1,1,20,"Enter number of badpix files to be read?"
+badpixfile,f,ql,"/data2/czti/testarea/mithun/spectral_analysis/AS1cztbadpix20160908v01.fits",,,"Enter bad pixel file name:"
+outfile,f,a,"/data2/czti/testarea/bhagyashri/level2/czt_modeM)_level2_common_badpix.fits",,,"Enter output badpixel file:"
+clobber,b,a,n,,,"Want to overwrite..?(YES/NO)"
+history,b,a,n,,,"Want to add history..?(YES/NO)"
+debug,b,h,no,,,"Debug?"
+mode,s,h,"ql",,,"Mode parameter"

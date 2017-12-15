@@ -1,0 +1,8 @@
+par_modename,s,ql,"modeM0",,,"Enter the name of mode to be processed:"
+par_nscienceFiles,i,ql,1,1,,"Enter number of science files to be merged:"
+par_infile,f,ql,"/data2/czti/testarea/priyanka/20170625_G07_063T01_9000001336_level1/czti/09416/modeM0/AS1G07_063T01_9000001336cztM0_level1.fits",,,"Enter science file name:"
+par_tctfile,f,ql,"/data2/czti/testarea/priyanka/20170625_G07_063T01_9000001336_level1/czti/09416/aux/AS1G07_063T01_9000001336czt_level1.tct",,,"Enter the merged tct file:"
+par_mcapfile,f,ql,"/data2/czti/testarea/priyanka/20170625_G07_063T01_9000001336_level1/czti/09416/AS1G07_063T01_9000001336czt_level1_mcap.xml",,,"Enter the mcap file:"
+par_outfile,f,ql,"/data2/czti/testarea/priyanka/20170625_G07_063T01_9000001336_level1/czti/test.fits",,,"Enter output science file:"
+clobber,b,q,y,,,"Overwrite Existing file?"
+history,b,a,n,,,"Write history keywords in fits file"

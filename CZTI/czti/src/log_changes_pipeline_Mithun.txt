@@ -1,0 +1,50 @@
+*cztgtigen
+    
+    correction in routine intersection
+
+*cztscience2event
+
+    Commented section of writing GTI and BTI files and reading the names in
+    PIL
+
+    Eventfile Handler new routine to copy GTIs from science file 
+    to event file. called in science2eventprocess
+    BAD WAY OF HANLING IF NO GTI EXTENSION PRESENT. 
+    No validation for whether GTIs are present or not. If present 
+    they are copied
+
+    create_l2evt now copies the header keywords
+    It also copies exp_time
+
+    SSM Data Quadid was not being written. This is now done
+    Vetospectrum data was not having quadid. Added now. Changed template as
+    well
+
+*cztpha2energy
+
+    Removed Multiple copying of TEMP extn from SSM data
+
+    Copy Extensions till vetospectrum from input to output
+    Copy SSM Data and temp extensions from SSM file to output
+    Copy GTIs from input to output
+
+*cztbunchclean
+
+    New module added
+    Now reads quadrant GTI extensions of event file to get 
+    exposure time
+    Added history,clobber etc 
+    Bug fix for large data gap problem
+    clock correction applied
+
+*cztdatasel
+
+    REWRITTEN with the new idea of multitple extension GTI
+    and having gtitype for selection
+
+*common
+    utils.cpp: copyusekey; correction made
+    level1handler.cpp: tct interpolation corrected for time reset
+    gtihandler.cpp: new procedure for cleaning GTI
+
+    level2validation.cpp: create_dpifile- keywords copying edited

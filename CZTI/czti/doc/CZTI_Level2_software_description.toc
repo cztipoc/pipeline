@@ -1,0 +1,24 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\contentsline {section}{\numberline {2}Overview of CZTI Data and Pipeline}{4}{section.2}
+\contentsline {section}{\numberline {3}Level-1 Data Content}{5}{section.3}
+\contentsline {section}{\numberline {4}Level-2 Pipeline Work flow}{5}{section.4}
+\contentsline {section}{\numberline {5}Description of Software Modules}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}cztmergeaux}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}cztattcorrect}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}cztorbcorrect}{8}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}cztmergescience}{9}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}cztscience2event}{10}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}cztpha2energy}{11}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}cztmkfgen}{12}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}cztbunchclean}{13}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}cztgtigen}{14}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}cztgaas}{15}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}cztdatasel}{17}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.12}cztpixclean}{17}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.13}cztevtclean}{18}{subsection.5.13}
+\contentsline {subsection}{\numberline {5.14}cztdpigen}{18}{subsection.5.14}
+\contentsline {subsection}{\numberline {5.15}cztimage}{19}{subsection.5.15}
+\contentsline {subsection}{\numberline {5.16}cztbindata}{20}{subsection.5.16}
+\contentsline {subsection}{\numberline {5.17}cztrspgen}{21}{subsection.5.17}
+\contentsline {section}{\numberline {6}Description of the pipeline script}{22}{section.6}
+\contentsline {section}{\numberline {7}Format of level-2 FITS files}{22}{section.7}

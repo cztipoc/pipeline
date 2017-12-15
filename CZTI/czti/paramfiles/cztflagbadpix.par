@@ -1,0 +1,7 @@
+nbadpixFiles,i,ql,17,1,20,"Enter number of badpix files to be read?"
+badpixfile,f,ql,"201711_level2_quad_badpix_merged.fits",,,"Enter bad pixel file name:"
+outfile,f,a,"201711_level2_quad_badpix_merged_all.fits",,,"Enter output badpixel file:"
+clobber,b,a,YES,,,"Want to overwrite..?(YES/NO)"
+history,b,a,YES,,,"Want to add history..?(YES/NO)"
+debug,b,h,no,,,"Debug?"
+mode,s,h,"ql",,,"Mode parameter"

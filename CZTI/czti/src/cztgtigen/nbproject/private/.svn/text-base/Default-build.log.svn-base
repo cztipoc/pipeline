@@ -1,0 +1,699 @@
+icpc -c -Wall cztgtigen.cpp -o cztgtigen.o -I../include -I../../include 
+../../include/glog/logging.h(602): remark #1418: external function definition with no prior declaration
+  std::string* MakeCheckOpString(const t1& v1, const t2& v2, const char* names) {
+               ^
+
+../../include/glog/logging.h(1193): remark #444: destructor for base class "google::LogMessage" (declared at line 1014) is not virtual
+  class GOOGLE_GLOG_DLL_DECL LogMessageFatal : public LogMessage {
+                                                      ^
+
+../../include/glog/logging.h(1214): remark #1418: external function definition with no prior declaration
+  T* CheckNotNull(const char *file, int line, const char *names, T* t) {
+     ^
+
+../../include/glog/logging.h(1229): remark #444: destructor for base class "google::LogMessage" (declared at line 1014) is not virtual
+  class GOOGLE_GLOG_DLL_DECL ErrnoLogMessage : public LogMessage {
+                                                      ^
+
+../include/utils.h(446): remark #1418: external function definition with no prior declaration
+  int checkRangeValidity(fitsfile *fptr,int hdunum,char *colname,T *val1,T *val2,int num, bool *valid){
+      ^
+
+../include/utils.h(615): remark #1418: external function definition with no prior declaration
+  int makeFullImage(T *q0,T *q1,T *q2,T *q3,T *fullImage){
+      ^
+
+cztgtigen.cpp(101): remark #869: parameter "lbtextname" was never referenced
+  int cztgtigen::read(char *runmode,char *lbtfile,char *lbtextname,char *thresholdfile,
+                                                        ^
+
+cztgtigen.cpp(229): remark #177: variable "hdutype" was declared but never referenced
+          int hdutype;
+              ^
+
+cztgtigen.cpp(230): remark #177: variable "extname" was declared but never referenced
+          char extname[FLEN_VALUE];
+               ^
+
+cztgtigen.cpp(278): remark #177: variable "qid" was declared but never referenced
+      int tfields=2,qid;
+                    ^
+
+cztgtigen.cpp(295): remark #981: operands are evaluated in unspecified order
+                         if((param[i].q1_modeid>=thr[j].LV) && (param[i].q1_modeid<=thr[j].UV))
+                                               ^
+
+cztgtigen.cpp(295): remark #981: operands are evaluated in unspecified order
+                         if((param[i].q1_modeid>=thr[j].LV) && (param[i].q1_modeid<=thr[j].UV))
+                                                                                  ^
+
+cztgtigen.cpp(300): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_5v_monitor>=thr[j].LV && param[i].q1_5v_monitor<=thr[j].UV)
+                                                  ^
+
+cztgtigen.cpp(300): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_5v_monitor>=thr[j].LV && param[i].q1_5v_monitor<=thr[j].UV)
+                                                                                       ^
+
+cztgtigen.cpp(305): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_czt_counter>=thr[j].LV && param[i].q1_msb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(305): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_czt_counter>=thr[j].LV && param[i].q1_msb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(310): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_temperature>=thr[j].LV && param[i].q1_temperature<=thr[j].UV)
+                                                   ^
+
+cztgtigen.cpp(310): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_temperature>=thr[j].LV && param[i].q1_temperature<=thr[j].UV)
+                                                                                         ^
+
+cztgtigen.cpp(315): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_czt_counter>=thr[j].LV && param[i].q1_lsb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(315): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_czt_counter>=thr[j].LV && param[i].q1_lsb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(320): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_2p5v_monitor>=thr[j].LV && param[i].q1_2p5v_monitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(320): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_2p5v_monitor>=thr[j].LV && param[i].q1_2p5v_monitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(325): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_vetoHVmonitor>=thr[j].LV && param[i].q1_vetoHVmonitor<=thr[j].UV)
+                                                     ^
+
+cztgtigen.cpp(325): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_vetoHVmonitor>=thr[j].LV && param[i].q1_vetoHVmonitor<=thr[j].UV)
+                                                                                             ^
+
+cztgtigen.cpp(330): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_cztHVmonitor>=thr[j].LV && param[i].q1_cztHVmonitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(330): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_cztHVmonitor>=thr[j].LV && param[i].q1_cztHVmonitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(335): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_vetocounter>=thr[j].LV && param[i].q1_msb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(335): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_vetocounter>=thr[j].LV && param[i].q1_msb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(340): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_veto_lld>=thr[j].LV && param[i].q1_veto_lld<=thr[j].UV)
+                                                ^
+
+cztgtigen.cpp(340): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_veto_lld>=thr[j].LV && param[i].q1_veto_lld<=thr[j].UV)
+                                                                                   ^
+
+cztgtigen.cpp(345): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_dvdd>=thr[j].LV && param[i].q1_dvdd<=thr[j].UV)
+                                            ^
+
+cztgtigen.cpp(345): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_dvdd>=thr[j].LV && param[i].q1_dvdd<=thr[j].UV)
+                                                                           ^
+
+cztgtigen.cpp(350): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_alphacounter>=thr[j].LV && param[i].q1_msb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(350): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_msb_alphacounter>=thr[j].LV && param[i].q1_msb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(355): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_alphacounter>=thr[j].LV && param[i].q1_lsb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(355): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_alphacounter>=thr[j].LV && param[i].q1_lsb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(360): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_vetocounter>=thr[j].LV && param[i].q1_lsb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(360): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q1_lsb_vetocounter>=thr[j].LV && param[i].q1_lsb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(366): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_modeid>=thr[j].LV && param[i].q2_modeid<=thr[j].UV)
+                                              ^
+
+cztgtigen.cpp(366): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_modeid>=thr[j].LV && param[i].q2_modeid<=thr[j].UV)
+                                                                               ^
+
+cztgtigen.cpp(371): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_5v_monitor>=thr[j].LV && param[i].q2_5v_monitor<=thr[j].UV)
+                                                  ^
+
+cztgtigen.cpp(371): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_5v_monitor>=thr[j].LV && param[i].q2_5v_monitor<=thr[j].UV)
+                                                                                       ^
+
+cztgtigen.cpp(376): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_czt_counter>=thr[j].LV && param[i].q2_msb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(376): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_czt_counter>=thr[j].LV && param[i].q2_msb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(381): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_temperature>=thr[j].LV && param[i].q2_temperature<=thr[j].UV)
+                                                   ^
+
+cztgtigen.cpp(381): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_temperature>=thr[j].LV && param[i].q2_temperature<=thr[j].UV)
+                                                                                         ^
+
+cztgtigen.cpp(386): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_czt_counter>=thr[j].LV && param[i].q2_lsb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(386): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_czt_counter>=thr[j].LV && param[i].q2_lsb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(391): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_2p5v_monitor>=thr[j].LV && param[i].q2_2p5v_monitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(391): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_2p5v_monitor>=thr[j].LV && param[i].q2_2p5v_monitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(396): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_vetoHVmonitor>=thr[j].LV && param[i].q2_vetoHVmonitor<=thr[j].UV)
+                                                     ^
+
+cztgtigen.cpp(396): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_vetoHVmonitor>=thr[j].LV && param[i].q2_vetoHVmonitor<=thr[j].UV)
+                                                                                             ^
+
+cztgtigen.cpp(401): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_cztHVmonitor>=thr[j].LV && param[i].q2_cztHVmonitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(401): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_cztHVmonitor>=thr[j].LV && param[i].q2_cztHVmonitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(406): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_vetocounter>=thr[j].LV && param[i].q2_msb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(406): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_vetocounter>=thr[j].LV && param[i].q2_msb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(411): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_veto_lld>=thr[j].LV && param[i].q2_veto_lld<=thr[j].UV)
+                                                ^
+
+cztgtigen.cpp(411): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_veto_lld>=thr[j].LV && param[i].q2_veto_lld<=thr[j].UV)
+                                                                                   ^
+
+cztgtigen.cpp(416): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_dvdd>=thr[j].LV && param[i].q2_dvdd<=thr[j].UV)
+                                            ^
+
+cztgtigen.cpp(416): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_dvdd>=thr[j].LV && param[i].q2_dvdd<=thr[j].UV)
+                                                                           ^
+
+cztgtigen.cpp(421): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_alphacounter>=thr[j].LV && param[i].q2_msb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(421): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_msb_alphacounter>=thr[j].LV && param[i].q2_msb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(426): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_alphacounter>=thr[j].LV && param[i].q2_lsb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(426): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_alphacounter>=thr[j].LV && param[i].q2_lsb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(431): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_vetocounter>=thr[j].LV && param[i].q2_lsb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(431): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q2_lsb_vetocounter>=thr[j].LV && param[i].q2_lsb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(437): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_modeid>=thr[j].LV && param[i].q3_modeid<=thr[j].UV)
+                                              ^
+
+cztgtigen.cpp(437): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_modeid>=thr[j].LV && param[i].q3_modeid<=thr[j].UV)
+                                                                               ^
+
+cztgtigen.cpp(442): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_5v_monitor>=thr[j].LV && param[i].q3_5v_monitor<=thr[j].UV)
+                                                  ^
+
+cztgtigen.cpp(442): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_5v_monitor>=thr[j].LV && param[i].q3_5v_monitor<=thr[j].UV)
+                                                                                       ^
+
+cztgtigen.cpp(447): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_czt_counter>=thr[j].LV && param[i].q3_msb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(447): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_czt_counter>=thr[j].LV && param[i].q3_msb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(452): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_temperature>=thr[j].LV && param[i].q3_temperature<=thr[j].UV)
+                                                   ^
+
+cztgtigen.cpp(452): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_temperature>=thr[j].LV && param[i].q3_temperature<=thr[j].UV)
+                                                                                         ^
+
+cztgtigen.cpp(457): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_czt_counter>=thr[j].LV && param[i].q3_lsb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(457): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_czt_counter>=thr[j].LV && param[i].q3_lsb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(462): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_2p5v_monitor>=thr[j].LV && param[i].q3_2p5v_monitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(462): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_2p5v_monitor>=thr[j].LV && param[i].q3_2p5v_monitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(467): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_vetoHVmonitor>=thr[j].LV && param[i].q3_vetoHVmonitor<=thr[j].UV)
+                                                     ^
+
+cztgtigen.cpp(467): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_vetoHVmonitor>=thr[j].LV && param[i].q3_vetoHVmonitor<=thr[j].UV)
+                                                                                             ^
+
+cztgtigen.cpp(472): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_cztHVmonitor>=thr[j].LV && param[i].q3_cztHVmonitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(472): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_cztHVmonitor>=thr[j].LV && param[i].q3_cztHVmonitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(477): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_vetocounter>=thr[j].LV && param[i].q3_msb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(477): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_vetocounter>=thr[j].LV && param[i].q3_msb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(482): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_veto_lld>=thr[j].LV && param[i].q3_veto_lld<=thr[j].UV)
+                                                ^
+
+cztgtigen.cpp(482): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_veto_lld>=thr[j].LV && param[i].q3_veto_lld<=thr[j].UV)
+                                                                                   ^
+
+cztgtigen.cpp(487): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_dvdd>=thr[j].LV && param[i].q3_dvdd<=thr[j].UV)
+                                            ^
+
+cztgtigen.cpp(487): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_dvdd>=thr[j].LV && param[i].q3_dvdd<=thr[j].UV)
+                                                                           ^
+
+cztgtigen.cpp(492): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_alphacounter>=thr[j].LV && param[i].q3_msb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(492): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_msb_alphacounter>=thr[j].LV && param[i].q3_msb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(497): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_alphacounter>=thr[j].LV && param[i].q3_lsb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(497): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_alphacounter>=thr[j].LV && param[i].q3_lsb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(502): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_vetocounter>=thr[j].LV && param[i].q3_lsb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(502): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q3_lsb_vetocounter>=thr[j].LV && param[i].q3_lsb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(508): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_modeid>=thr[j].LV && param[i].q4_modeid<=thr[j].UV)
+                                              ^
+
+cztgtigen.cpp(508): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_modeid>=thr[j].LV && param[i].q4_modeid<=thr[j].UV)
+                                                                               ^
+
+cztgtigen.cpp(513): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_5v_monitor>=thr[j].LV && param[i].q4_5v_monitor<=thr[j].UV)
+                                                  ^
+
+cztgtigen.cpp(513): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_5v_monitor>=thr[j].LV && param[i].q4_5v_monitor<=thr[j].UV)
+                                                                                       ^
+
+cztgtigen.cpp(518): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_czt_counter>=thr[j].LV && param[i].q4_msb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(518): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_czt_counter>=thr[j].LV && param[i].q4_msb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(523): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_temperature>=thr[j].LV && param[i].q4_temperature<=thr[j].UV)
+                                                   ^
+
+cztgtigen.cpp(523): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_temperature>=thr[j].LV && param[i].q4_temperature<=thr[j].UV)
+                                                                                         ^
+
+cztgtigen.cpp(528): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_czt_counter>=thr[j].LV && param[i].q4_lsb_czt_counter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(528): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_czt_counter>=thr[j].LV && param[i].q4_lsb_czt_counter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(533): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_2p5v_monitor>=thr[j].LV && param[i].q4_2p5v_monitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(533): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_2p5v_monitor>=thr[j].LV && param[i].q4_2p5v_monitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(538): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_vetoHVmonitor>=thr[j].LV && param[i].q4_vetoHVmonitor<=thr[j].UV)
+                                                     ^
+
+cztgtigen.cpp(538): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_vetoHVmonitor>=thr[j].LV && param[i].q4_vetoHVmonitor<=thr[j].UV)
+                                                                                             ^
+
+cztgtigen.cpp(543): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_cztHVmonitor>=thr[j].LV && param[i].q4_cztHVmonitor<=thr[j].UV)
+                                                    ^
+
+cztgtigen.cpp(543): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_cztHVmonitor>=thr[j].LV && param[i].q4_cztHVmonitor<=thr[j].UV)
+                                                                                           ^
+
+cztgtigen.cpp(548): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_vetocounter>=thr[j].LV && param[i].q4_msb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(548): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_vetocounter>=thr[j].LV && param[i].q4_msb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(553): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_veto_lld>=thr[j].LV && param[i].q4_veto_lld<=thr[j].UV)
+                                                ^
+
+cztgtigen.cpp(553): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_veto_lld>=thr[j].LV && param[i].q4_veto_lld<=thr[j].UV)
+                                                                                   ^
+
+cztgtigen.cpp(558): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_dvdd>=thr[j].LV && param[i].q4_dvdd<=thr[j].UV)
+                                            ^
+
+cztgtigen.cpp(558): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_dvdd>=thr[j].LV && param[i].q4_dvdd<=thr[j].UV)
+                                                                           ^
+
+cztgtigen.cpp(563): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_alphacounter>=thr[j].LV && param[i].q4_msb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(563): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_msb_alphacounter>=thr[j].LV && param[i].q4_msb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(568): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_alphacounter>=thr[j].LV && param[i].q4_lsb_alphacounter<=thr[j].UV)
+                                                        ^
+
+cztgtigen.cpp(568): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_alphacounter>=thr[j].LV && param[i].q4_lsb_alphacounter<=thr[j].UV)
+                                                                                                   ^
+
+cztgtigen.cpp(573): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_vetocounter>=thr[j].LV && param[i].q4_lsb_vetocounter<=thr[j].UV)
+                                                       ^
+
+cztgtigen.cpp(573): remark #981: operands are evaluated in unspecified order
+                         if(param[i].q4_lsb_vetocounter>=thr[j].LV && param[i].q4_lsb_vetocounter<=thr[j].UV)
+                                                                                                 ^
+
+cztgtigen.cpp(591): remark #981: operands are evaluated in unspecified order
+     LOG(INFO)<<"Number of GTI Intervals:"<<gti.size();
+                                          ^
+
+cztgtigen.cpp(660): remark #981: operands are evaluated in unspecified order
+              if(gti2refine[i].tstart>=ingti[j].tstart && gti2refine[i].tstop<=ingti[j].tstop)
+                                     ^
+
+cztgtigen.cpp(660): remark #981: operands are evaluated in unspecified order
+              if(gti2refine[i].tstart>=ingti[j].tstart && gti2refine[i].tstop<=ingti[j].tstop)
+                                                                             ^
+
+cztgtigen.cpp(663): remark #981: operands are evaluated in unspecified order
+              if(gti2refine[i].tstart>ingti[j].tstart)
+                                     ^
+
+cztgtigen.cpp(668): remark #981: operands are evaluated in unspecified order
+              if(gti2refine[i].tstop<ingti[j].tstop)
+                                    ^
+
+cztgtigen.cpp(681): remark #981: operands are evaluated in unspecified order
+          if((*iter).tstart<=(*iter).tstop){
+                           ^
+
+cztgtigen.cpp(683): remark #981: operands are evaluated in unspecified order
+              LOG(INFO)<<(*iter).tstart<<"-"<<(*iter).tstop;
+                       ^
+
+cztgtigen.cpp(683): remark #981: operands are evaluated in unspecified order
+              LOG(INFO)<<(*iter).tstart<<"-"<<(*iter).tstop;
+                                            ^
+
+cztgtigen.cpp(704): remark #383: value copied to temporary, reference to temporary used
+          vhistory.push_back("P8 clobber=yes");
+                             ^
+
+cztgtigen.cpp(706): remark #383: value copied to temporary, reference to temporary used
+          vhistory.push_back("P8 clobber=no");
+                             ^
+
+cztgtigen.cpp(708): remark #383: value copied to temporary, reference to temporary used
+          vhistory.push_back("P9 history=yes");
+                             ^
+
+cztgtigen.cpp(710): remark #383: value copied to temporary, reference to temporary used
+          vhistory.push_back("P9 history=no");
+                             ^
+
+cztgtigen.cpp(711): remark #383: value copied to temporary, reference to temporary used
+      vhistory.push_back("Parameter List END");
+                         ^
+
+cztgtigen.cpp(712): remark #1: last line of file ends without a newline
+  }
+   ^
+
+../../include/glog/logging.h(633): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_EQ, ==)
+  ^
+
+../../include/glog/logging.h(633): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_EQ, ==)
+  ^
+
+../../include/glog/logging.h(610): remark #981: operands are evaluated in unspecified order
+    ss << names << " (" << v1 << " vs. " << v2 << ")";
+                        ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(610): remark #981: operands are evaluated in unspecified order
+    ss << names << " (" << v1 << " vs. " << v2 << ")";
+                                         ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(611): remark #981: operands are evaluated in unspecified order
+    return new std::string(ss.str(), ss.pcount());
+                                     ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(634): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_NE, !=)
+  ^
+
+../../include/glog/logging.h(634): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_NE, !=)
+  ^
+
+../../include/glog/logging.h(635): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LE, <=)
+  ^
+
+../../include/glog/logging.h(635): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LE, <=)
+  ^
+
+../../include/glog/logging.h(636): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LT, < )
+  ^
+
+../../include/glog/logging.h(636): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LT, < )
+  ^
+
+../../include/glog/logging.h(637): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GE, >=)
+  ^
+
+../../include/glog/logging.h(637): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GE, >=)
+  ^
+
+../../include/glog/logging.h(638): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GT, > )
+  ^
+
+../../include/glog/logging.h(638): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GT, > )
+  ^
+
+icpc -c -Wall lbt.cpp -o lbt.o -I../include -I../../include 
+../../include/glog/logging.h(602): remark #1418: external function definition with no prior declaration
+  std::string* MakeCheckOpString(const t1& v1, const t2& v2, const char* names) {
+               ^
+
+../../include/glog/logging.h(1193): remark #444: destructor for base class "google::LogMessage" (declared at line 1014) is not virtual
+  class GOOGLE_GLOG_DLL_DECL LogMessageFatal : public LogMessage {
+                                                      ^
+
+../../include/glog/logging.h(1214): remark #1418: external function definition with no prior declaration
+  T* CheckNotNull(const char *file, int line, const char *names, T* t) {
+     ^
+
+../../include/glog/logging.h(1229): remark #444: destructor for base class "google::LogMessage" (declared at line 1014) is not virtual
+  class GOOGLE_GLOG_DLL_DECL ErrnoLogMessage : public LogMessage {
+                                                      ^
+
+lbt.cpp(18): remark #177: variable "line" was declared but never referenced
+      char line[100];
+           ^
+
+lbt.cpp(143): remark #1: last line of file ends without a newline
+  }
+   ^
+
+../../include/glog/logging.h(633): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_EQ, ==)
+  ^
+
+../../include/glog/logging.h(633): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_EQ, ==)
+  ^
+
+../../include/glog/logging.h(610): remark #981: operands are evaluated in unspecified order
+    ss << names << " (" << v1 << " vs. " << v2 << ")";
+                        ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(610): remark #981: operands are evaluated in unspecified order
+    ss << names << " (" << v1 << " vs. " << v2 << ")";
+                                         ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(611): remark #981: operands are evaluated in unspecified order
+    return new std::string(ss.str(), ss.pcount());
+                                     ^
+          detected during instantiation of "std::string *google::Check_EQImpl(const t1 &, const t2 &, const char *) [with t1=int, t2=int]" at line 633
+
+../../include/glog/logging.h(634): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_NE, !=)
+  ^
+
+../../include/glog/logging.h(634): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_NE, !=)
+  ^
+
+../../include/glog/logging.h(635): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LE, <=)
+  ^
+
+../../include/glog/logging.h(635): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LE, <=)
+  ^
+
+../../include/glog/logging.h(636): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LT, < )
+  ^
+
+../../include/glog/logging.h(636): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_LT, < )
+  ^
+
+../../include/glog/logging.h(637): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GE, >=)
+  ^
+
+../../include/glog/logging.h(637): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GE, >=)
+  ^
+
+../../include/glog/logging.h(638): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GT, > )
+  ^
+
+../../include/glog/logging.h(638): remark #981: operands are evaluated in unspecified order
+  DEFINE_CHECK_OP_IMPL(_GT, > )
+  ^
+
+icpc -o cztgtigen main.cpp cztgtigen.o lbt.o  -I../include -I../../include -L../../lib -lpil ../lib/libcommon.a -lcfitsio -lm -lglog -lpthread
+cp cztgtigen ../../bin	
+ar cr ../lib/libcztgtigen.a cztgtigen.o lbt.o 

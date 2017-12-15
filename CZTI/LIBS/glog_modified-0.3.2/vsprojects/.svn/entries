@@ -1,0 +1,40 @@
+10
+
+dir
+1521
+svn://rohini.ac.iucaa.ernet.in/czti/trunk/users/ajay/pipeline/CZTI/LIBS/glog_modified-0.3.2/vsprojects
+svn://rohini.ac.iucaa.ernet.in/czti
+
+
+
+2015-12-01T04:52:50.415086Z
+562
+ajay
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b817b9ba-fee6-4bf6-9fdc-0505db9cffe0
+
+libglog
+dir
+
+logging_unittest
+dir
+
+libglog_static
+dir
+
+logging_unittest_static
+dir
+

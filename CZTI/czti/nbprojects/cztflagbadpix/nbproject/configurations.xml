@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="94">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/badpixCALDB.h</itemPath>
+      <itemPath>../../src/cztflagbadpix/cztflagbadpix.h</itemPath>
+      <itemPath>../../src/common/cztstring.h</itemPath>
+      <itemPath>../../src/common/utils.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../../src/common/badpixCALDB.cpp</itemPath>
+      <itemPath>../../src/cztflagbadpix/cztflagbadpix.cpp</itemPath>
+      <itemPath>../../src/common/cztstring.cpp</itemPath>
+      <itemPath>../../src/cztflagbadpix/main.cpp</itemPath>
+      <itemPath>../../src/common/utils.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>../../src/common</pElem>
+            <pElem>../../src/cztflagbadpix</pElem>
+            <pElem>../../include</pElem>
+          </incDir>
+          <commandLine>-DNDEBUG</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>../../bin/cztflagbadpix</output>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+            <linkerLibFileItem>../../lib/libcfitsio.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libglog.a</linkerLibFileItem>
+            <linkerLibFileItem>../../lib/libpil.a</linkerLibFileItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../src/common/badpixCALDB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="../../src/common/badpixCALDB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/badpixCALDB.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/cztstring.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../../src/common/utils.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/cztflagbadpix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="../../src/cztflagbadpix/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

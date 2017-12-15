@@ -1,0 +1,7 @@
+eventfile,f,ql,"/data2/czti/testarea/priyanka/download/AS1G07_076T03_9000001314_09312cztM0_level2_bc.evt",,,"Enter the event file"
+mkffile,f,ql,"/data2/czti/testarea/priyanka/download/AS1G07_076T03_9000001314_09312czt_level2.mkf",,,"Enter mkf file"
+thresholdfile,f,ql,"/home/cztipoc/czti/trunk/code/transients/mkfThresholds.txt",,,"Enter MKF threshold file"
+outfile,f,ql,"/data2/czti/testarea/priyanka/download/modeM0/level2.gti",,,"Enter output filename"
+usergtifile,f,q,"-",,,"Any user defined GTI file"
+history,b,a,y,,,"Want history to be written to output file(YES/NO)"
+clobber,b,a,y,,,"Want to overwrite the output file(yes/no)"

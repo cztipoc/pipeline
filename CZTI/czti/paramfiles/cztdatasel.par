@@ -1,0 +1,7 @@
+infile,f,a,"AS1A04_088T05_9000001764_11920cztM0_level2_4_single.evt",,,"Enter Input Event file:"
+gtifile,f,a,"AS1A04_088T05_9000001764_11920cztM0_level2_4_single.evt",,,"Enter GTI filename:"
+gtitype,s,ql,"quad",,,"Enter GTI type (common/quad):"
+outfile,f,a,"AS1A04_088T05_9000001764_11920cztM0_level2_4_single_ds.evt",,,"Enter output filename:"
+clobber,b,a,y,,,"Overwrite Existing file?"
+history,b,a,y,,,"Write history keywords in fits file"
+Mode,s,h,"ql",,,"Mode"

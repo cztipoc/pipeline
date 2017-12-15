@@ -1,0 +1,24 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Overview of CZTI Data and Pipeline}{}
+\BOOKMARK [1][-]{section.3}{Level-1 Data Content}{}
+\BOOKMARK [1][-]{section.4}{Level-2 Pipeline Work flow}{}
+\BOOKMARK [1][-]{section.5}{Description of Software Modules}{}
+\BOOKMARK [2][-]{subsection.5.1}{cztmergeaux}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{cztattcorrect}{section.5}
+\BOOKMARK [2][-]{subsection.5.3}{cztorbcorrect}{section.5}
+\BOOKMARK [2][-]{subsection.5.4}{cztmergescience}{section.5}
+\BOOKMARK [2][-]{subsection.5.5}{cztscience2event}{section.5}
+\BOOKMARK [2][-]{subsection.5.6}{cztpha2energy}{section.5}
+\BOOKMARK [2][-]{subsection.5.7}{cztmkfgen}{section.5}
+\BOOKMARK [2][-]{subsection.5.8}{cztbunchclean}{section.5}
+\BOOKMARK [2][-]{subsection.5.9}{cztgtigen}{section.5}
+\BOOKMARK [2][-]{subsection.5.10}{cztgaas}{section.5}
+\BOOKMARK [2][-]{subsection.5.11}{cztdatasel}{section.5}
+\BOOKMARK [2][-]{subsection.5.12}{cztpixclean}{section.5}
+\BOOKMARK [2][-]{subsection.5.13}{cztevtclean}{section.5}
+\BOOKMARK [2][-]{subsection.5.14}{cztdpigen}{section.5}
+\BOOKMARK [2][-]{subsection.5.15}{cztimage}{section.5}
+\BOOKMARK [2][-]{subsection.5.16}{cztbindata}{section.5}
+\BOOKMARK [2][-]{subsection.5.17}{cztrspgen}{section.5}
+\BOOKMARK [1][-]{section.6}{Description of the pipeline script}{}
+\BOOKMARK [1][-]{section.7}{Format of level-2 FITS files}{}

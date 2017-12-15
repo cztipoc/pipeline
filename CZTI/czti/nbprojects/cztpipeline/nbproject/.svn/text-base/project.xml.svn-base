@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.cnd.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>cztpipeline</name>
+            <c-extensions/>
+            <cpp-extensions>cpp</cpp-extensions>
+            <header-extensions>h</header-extensions>
+            <sourceEncoding>UTF-8</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../src/common</sourceRootElem>
+                <sourceRootElem>../../src/cztdatasel</sourceRootElem>
+                <sourceRootElem>../../src/cztdpigen</sourceRootElem>
+                <sourceRootElem>../../src/cztevtclean</sourceRootElem>
+                <sourceRootElem>../../src/cztfilterbadpix</sourceRootElem>
+                <sourceRootElem>../../src/cztfindbadpix</sourceRootElem>
+                <sourceRootElem>../../src/cztfindsources</sourceRootElem>
+                <sourceRootElem>../../src/cztgaas</sourceRootElem>
+                <sourceRootElem>../../src/cztgtigen</sourceRootElem>
+                <sourceRootElem>../../src/cztimage</sourceRootElem>
+                <sourceRootElem>../../src/cztpha2energy</sourceRootElem>
+                <sourceRootElem>../../src/cztpipeline</sourceRootElem>
+                <sourceRootElem>../../src/cztscience2event</sourceRootElem>
+                <sourceRootElem>../../src/cztpsfshadowgen</sourceRootElem>
+                <sourceRootElem>../../src/cztbindatanew</sourceRootElem>
+                <sourceRootElem>../../src/cztflagbadpix</sourceRootElem>
+                <sourceRootElem>../../src/cztmkfgen</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Release</name>
+                    <type>1</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>

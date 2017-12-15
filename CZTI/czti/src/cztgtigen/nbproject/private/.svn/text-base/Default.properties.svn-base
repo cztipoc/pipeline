@@ -1,0 +1,3 @@
+/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen/cztgtigen.cpp=/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen#-c -Wall cztgtigen.cpp -o cztgtigen.o -I../include -I../../include
+/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen/main.cpp=/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen#-o cztgtigen main.cpp cztgtigen.o lbt.o -I../include -I../../include -L../../lib -lpil ../lib/libcommon.a -lcfitsio -lm -lglog -lpthread
+/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen/lbt.cpp=/home/tanul/Documents/projects/ASTROSAT/src/cztgtigen#-c -Wall lbt.cpp -o lbt.o -I../include -I../../include

@@ -1,0 +1,8 @@
+infile,f,a,"AS1A04_088T05_9000001764_11920cztM0_level2_4_single_ds.evt",,,"Enter input event file:"
+outfile,f,a,"AS1A04_088T05_9000001764_11920cztM0_level2_4_clean.evt",,,"Enter output event filename:"
+alphaval,s,a,"0",,,"Alpha values to be accepted(0;1;0,1):"
+vetorange,s,a,"0-0",,,"Veto Range/Ranges to accept:"
+clobber,b,a,y,,,"Overwrite Existing file?"
+isdoubleEvent,b,h,n,,,"Is this double event file? :"
+history,b,a,y,,,"Write history keywords in fits file"
+mode,s,h,"ql",,,"Mode"
